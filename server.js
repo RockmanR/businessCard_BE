@@ -5,7 +5,7 @@
 // expressJS config
 const express = require('express')
 const app = express()
-const port = 3000;
+const PORT = process.env.PORT || 5000       //I believe the 'process.env.PORT' is required to connect with heroku
 const bodyParser = require('body-parser')
 app.use(bodyParser.json())      //to enable reading and sending a json file
 
@@ -135,4 +135,4 @@ app.post('/delete', (req,res)=> {
   
 
 
-app.listen(port, ()=>{console.log(`listening to port ${port}`)})
+app.listen(PORT, ()=>{console.log(`listening to port ${PORT}`)})
