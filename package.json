@@ -1,16 +1,26 @@
 {
-  "name": "FrontBackDB",
+  "name": "frontbackdb",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "ahmed",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.16.4",
     "mongoose": "^5.4.17"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RockmanR/businessCard_BE.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RockmanR/businessCard_BE/issues"
+  },
+  "homepage": "https://github.com/RockmanR/businessCard_BE#readme",
+  "description": ""
 }
