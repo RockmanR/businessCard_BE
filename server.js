@@ -49,6 +49,10 @@ var UserColl = mongoose.model('UserColl', userSchema);  // creating a colletion 
 /////////////        Body       /////////////
 /////////////                   /////////////
 
+app.get('/',(req,res)=>{                 // a request to get all user/account records
+    res.send("server is up and running!")  // an array will be sent back to the Front-end Server
+})
+
 app.get('/all',(req,res)=>{                 // a request to get all user/account records
     UserColl.find({})                       // 'find' function from MongoDB
     .then(results => { res.send(results)})  // an array will be sent back to the Front-end Server
