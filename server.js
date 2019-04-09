@@ -13,7 +13,7 @@ app.use(bodyParser.json())      //to enable reading and sending a json file
 /////////////                   /////////////
 
 // mongoose setup and connection
-var mongoPassword = 'user_2';
+var mongoPassword = '';
 const mongoose = require('mongoose')
 mongoose.connect(`mongodb+srv://user_2:${mongoPassword}@cluster0-1btaq.mongodb.net/node2?retryWrites=true`,{ useNewUrlParser: true }) // to connect to my mongoDB could account
 
