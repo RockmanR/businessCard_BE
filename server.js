@@ -8,6 +8,8 @@ const app = express()
 const PORT = process.env.PORT || 5000       //I believe the 'process.env.PORT' is required to connect with heroku
 const bodyParser = require('body-parser')
 app.use(bodyParser.json())      //to enable reading and sending a json file
+var cors = require('cors')      // to enable 'cors' for any website accessing it
+app.use(cors())
 
 /////////////       MongoDB     /////////////
 /////////////                   /////////////
